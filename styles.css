@@ -1,0 +1,229 @@
+@import url('https://fonts.cdnfonts.com/css/digital');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+
+:root {
+  --blue: #0567A9;
+  --red: #C42A26;
+  --gray: #545454;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+body {
+  background-image: url("img/bg.jpg");
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.section-left, .section-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-left p {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 10%;
+  text-align: center;
+  font-size: 35px;
+  color: red;
+}
+
+.section-right p {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 10%;
+  text-align: center;
+  font-size: 35px;
+  color: #0567A9;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+section:not(:last-child) {
+  margin-right: 100px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 80px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.btn-rows {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  width: 300px;
+}
+
+.btn-score {
+  background-color: transparent;
+  border: 5px solid #000;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  font-size: 30px;
+  font-weight: 700;
+  transition: all .2s ease-in-out;
+}
+
+.btn-score:hover {
+  color: #fff;
+}
+
+button:hover {
+  background-color: #000;
+  cursor: pointer;
+}
+
+.aka-display, .ao-display {
+  font-family: 'Digital', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 70px 80px;
+  font-size: 150px;
+  font-weight: 800;
+  background-color: #000;
+  margin-bottom: 25px;
+  border-radius: 20px;
+  width: 300px;
+  height: 300px;
+}
+
+.section-center {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-center img {
+  margin-inline: auto;
+  margin-bottom: 5%;
+}
+
+.timer-display {
+  font-family: 'Digital', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 90px;
+  background-color: #fff;
+  color: #000;
+  margin-bottom: 25px;
+  border-radius: 20px;
+  width: 100%;
+  max-height: 150px;  
+  border: 7px solid #222;
+  filter: drop-shadow(5px 5px 4px rgba(0,0,0,.20));
+}
+
+.btn-match-time {
+  width: 100%;
+  margin-inline: auto;
+  margin-bottom: 4%;
+  font-size: 18px;
+  padding: 20px;
+  border-radius: 25px;
+  border: 5px solid #808080;
+}
+
+
+.btn-match-time:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-active {
+  background-color: #000;
+  color: #fff;
+  font-size: 20px;
+}
+
+.aka-display, .ao-display {
+  color: #fff;
+}
+
+.aka-display {
+  background-color: var(--red);
+}
+
+.ao-display {
+  background-color: var(--blue);
+}
+
+.btn-rows {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* Buttons under Red Side */
+
+.btn-aka {
+  border: 6px solid var(--red);
+  color: var(--red);
+}
+
+.btn-aka:hover {
+  background-color: var(--red);
+}
+
+
+/* Buttons under Blue Side */
+
+.btn-ao {
+  border: 6px solid var(--blue);
+  color: var(--blue);
+}
+
+.btn-ao:hover {
+  background-color: var(--blue);
+}
+
+
+/* New Match Button */
+
+.btn-reset {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-top: 5%;
+  margin-inline: auto;
+  border-radius: 50%;
+  padding: 20px;
+  width: 140px;
+  height: 140px;
+  font-size: 20px;
+  border: 7px solid var(--gray);
+  transition: all .2s ease-in-out;
+}
+
+.btn-reset p {
+  color: var(--gray);
+  font-weight: bold;
+}
+
+.btn-reset:hover {
+  background-color: var(--gray);
+  color: #fff;
+}
